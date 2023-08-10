@@ -2,8 +2,9 @@
 
 /**
  *main-main func
- *return: return
- * */
+ *
+ *Return: return
+ */
 
 int main(void)
 {
