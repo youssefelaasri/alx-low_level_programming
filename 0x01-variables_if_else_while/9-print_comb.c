@@ -2,7 +2,7 @@
 
 /**
   *main-main func
-  *Retutn: return
+  *Return: return
   */
 
 int main(void)
