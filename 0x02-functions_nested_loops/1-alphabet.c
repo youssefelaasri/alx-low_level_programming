@@ -1,5 +1,4 @@
 #include <stdio.h>
-int _putchar(char c);
 /**
   *print_alphabet
   *Return: 0
