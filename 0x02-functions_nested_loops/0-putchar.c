@@ -3,6 +3,7 @@
 /**
   *main - main func
   *Return: reurns 0
+  *@c: our para
   */
 int _putchar(char c);
 int main(void)
