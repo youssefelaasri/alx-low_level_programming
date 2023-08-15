@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
-  *
-  *
+  *main - main func
+  *Return: reurns 0
   */
-
+int _putchar(char c);
 int main(void)
 {
 	_putchar('_');
@@ -16,4 +16,5 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
+	return (0);
 }
