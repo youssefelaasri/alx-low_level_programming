@@ -3,21 +3,13 @@
 /**
   *_islower - func
   *Return: depends
+  *@c: para
   */
 
 int _islower(int c)
 {
-	char i;
-
-	for (i = 'a'; i <= 'z'; i++)
-	{
-		if (i == c)
-		{
-			return (1);
-		}
-		else
-		{
-			return (0);
-		}
-	}
+	if (c <= 'z' && c >= 'a')
+		return (1);
+	else
+		return (0);
 }
