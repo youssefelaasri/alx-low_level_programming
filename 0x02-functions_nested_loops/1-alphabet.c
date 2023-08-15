@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include "main.h"
 /**
-  *print_alphabet
+  *print_alphabet - func
   *Return: 0
-  *@c: para
   */
 void print_alphabet(void)
 {
