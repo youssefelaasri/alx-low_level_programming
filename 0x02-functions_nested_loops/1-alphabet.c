@@ -3,8 +3,9 @@
 /**
   *print_alphabet
   *Return: 0
+  *@c: para
   */
-
+int _putchar(char c);
 void print_alphabet(void)
 {
 	char i;
