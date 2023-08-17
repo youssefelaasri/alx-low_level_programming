@@ -1,5 +1,8 @@
 #include "main.h"
-
+/**
+  *print_line - fin
+  *@n: para
+ */
 void print_line(int n)
 {
 	while (n > 0)
