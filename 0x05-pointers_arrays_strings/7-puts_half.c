@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include "main.h"
-
+/**
+  *len - fun
+  *@s: para
+  *Return: return
+  */
 int len(char *s)
 {
 	char i;
@@ -12,6 +16,10 @@ int len(char *s)
 	}
 	return (count);
 }
+/**
+  *puts_half - put fjlf fun
+  *@str: string
+  */
 void puts_half(char *str)
 {
 	int i;
