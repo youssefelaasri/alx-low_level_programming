@@ -1,9 +1,10 @@
 #include "main.h"
 /**
-  *
-  *
+  *_strlen - fun
+  *@s: para
+  *Return: return
   */
- int _strlen(char *s)
+int _strlen(char *s)
 {
 	char i;
 	int count = 0;
@@ -15,13 +16,18 @@
 	return (count);
 }
 
+/**
+  *print_rev - fun
+  *@s: para
+  */
+
 void print_rev(char *s)
 {
 	int len;
 	int i;
 
 	len = _strlen(s);
-	for (i = len; i >= 0; i--)
+	for (i = len - 1; i >= 0; i--)
 	{
 		_putchar(s[i]);
 	}
