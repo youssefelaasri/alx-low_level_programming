@@ -1,4 +1,10 @@
 #include "main.h"
+
+/**
+  *puts2 - fun
+  *@s: para
+  *Return: return count
+  */
 int _strlen(char *s);
 void puts2(char *str)
 {
@@ -12,7 +18,11 @@ void puts2(char *str)
 	_putchar('\n');
 }
 
-
+/**
+  *_strlen - fun 2
+  *@s: para 2
+  *Return: returns count
+  */
 int _strlen(char *s)
 {
 	char i;
