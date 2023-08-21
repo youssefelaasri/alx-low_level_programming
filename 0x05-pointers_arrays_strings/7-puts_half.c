@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 int len(char *s)
@@ -5,8 +6,10 @@ int len(char *s)
 	char i;
 	int count = 0;
 
-	for (i = s[0]; i != '\n'; i = *(s + count))
+	for (i = s[0]; i != '\0'; i = *(s + count))
+	{
 		count++;
+	}
 	return (count);
 }
 void puts_half(char *str)
