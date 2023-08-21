@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
   *_puts - fun
-  *@*str: para
+  *@str: para
   */
 
 void _puts(char *str)
