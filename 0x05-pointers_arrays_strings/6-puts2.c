@@ -1,14 +1,13 @@
 #include "main.h"
-
+int _strlen(char *s);
 void puts2(char *str)
 {
-	char i;
-	int j = 0;
+	int i;
+	int len = _strlen(str);
 
-	for (i = str[0]; i != '\0'; i = *(str + j))
+	for (i = 0; i <= len; i = i + 2)
 	{
 		_putchar(i);
-		j += 2;
 	}
 	_putchar('\n');
 }
