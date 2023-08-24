@@ -1,5 +1,10 @@
 #include "main.h"
-
+/**
+  *_strncpy - fun
+  *@dest: first para
+  *@src:secon para
+  *@n: third oara
+  */
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
