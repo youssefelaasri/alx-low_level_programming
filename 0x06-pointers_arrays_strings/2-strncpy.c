@@ -4,6 +4,7 @@
   *@dest: first para
   *@src:secon para
   *@n: third oara
+  *Return: return
   */
 char *_strncpy(char *dest, char *src, int n)
 {
