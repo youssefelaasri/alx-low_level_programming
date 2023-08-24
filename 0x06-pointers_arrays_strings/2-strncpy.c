@@ -4,7 +4,7 @@
   *@dest: first para
   *@src:secon para
   *@n: third oara
-  *Return: return
+i  *Return: return
   */
 char *_strncpy(char *dest, char *src, int n)
 {
@@ -14,7 +14,12 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		dest[i] = src[i];
 		if (src[i] == '\0')
+		{
 			break;
+		}
 	}
+	for (; i < n; i++)
+		dest[i] = '\0';
+
 	return (dest);
 }
