@@ -2,7 +2,7 @@
 /**
   *_strlen - fun
   *@s: para
-  *Return: return 
+  *Return: return
   */
 int _strlen(char *s)
 {
@@ -18,7 +18,7 @@ int _strlen(char *s)
 /**
   *_strcat - fun
   *@dest: first para
-  *src: second para
+  *@src: second para
   *Return: return
   */
 char *_strcat(char *dest, char *src)

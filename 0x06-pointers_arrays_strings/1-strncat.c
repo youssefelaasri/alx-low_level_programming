@@ -1,5 +1,9 @@
 #include "main.h"
-
+/**
+  *_strlen - fun
+  *@s: para
+  *Return: return
+  */
 int _strlen(char *s)
 {
 	int i = 0;
@@ -9,7 +13,13 @@ int _strlen(char *s)
 		i++;
 	return (i);
 }
-
+/**
+  *_strncat - fun
+  *@dest: para 1
+  *@src: para 2
+  *@n: para 3
+  *Return: ret
+  */
 char *_strncat(char *dest, char *src, int n)
 {
 	int id = _strlen(dest);
