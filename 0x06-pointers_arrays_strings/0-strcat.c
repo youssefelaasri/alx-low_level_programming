@@ -1,5 +1,9 @@
 #include "main.h"
-
+/**
+  *_strlen - fun
+  *@s: para
+  *Return: return 
+  */
 int _strlen(char *s)
 {
 	int count = 0;
@@ -11,7 +15,12 @@ int _strlen(char *s)
 	}
 	return (count);
 }
-
+/**
+  *_strcat - fun
+  *@dest: first para
+  *src: second para
+  *Return: return
+  */
 char *_strcat(char *dest, char *src)
 {
 	int dlen = _strlen(dest);
