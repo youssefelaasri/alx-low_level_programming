@@ -1,21 +1,27 @@
 #include "main.h"
-
+/**
+  *print_diagonal - our fun
+  *@n: para
+  */
 void print_diagonal(int n)
 {
-	int nl, i;
+	int i;
+	int k;
 
-	for (nl = 1; nl <= n; n++)
+	if (n > 0)
 	{
-		for (i = ; i != 0; i--)
-			_putchar(' ');
-		
-
-
-
-
-
-
-
-		_putchar('\n');
+		for (i = 1; i <= n; i++)
+		{
+			for (k = 0; k < i - 1; k++)
+			{
+				if (i == 1)
+					continue;
+				_putchar(' ');
+			}
+			_putchar('\\');
+			_putchar('\n');
+		}
 	}
-
+	else
+		_putchar('\n');
+}
