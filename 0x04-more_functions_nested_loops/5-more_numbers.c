@@ -4,23 +4,28 @@
   */
 void more_numbers(void)
 {
-	int i, j, k;
+	int i, j;
+	int l = 10;
+	int k = 0;
 
 	for (i = 0; i <= 10; i++)
 	{
-		for (j = 48; j <= 57; j++)
+		for (j = 0; j <= l; j++)
 		{
-
-			if (j >= 58)
+			if (j == 10)
 			{
-				for (k = 0; k < 1; k++)
-				{
-					j = 48;
-				}
+				j = 0;
+				l = 4;
+			}
+			if (k > 9)
+			{
 				_putchar('0' + 1);
 			}
-			_putchar(j);
+			_putchar('0' + j);
+			k++;
 		}
 		_putchar('\n');
+		k = 0;
+		l = 10;
 	}
 }
