@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
   *_strspn - fun
@@ -17,8 +18,12 @@ unsigned int _strspn(char *s, char *accept)
 			if (s[j] == accept[i])
 			{
 				c = c + 1;
+				break;
 			}
 		}
 	}
-	return (c);
+	if (c == 0)
+		return (0);
+	else
+		return (c + 1);
 }
