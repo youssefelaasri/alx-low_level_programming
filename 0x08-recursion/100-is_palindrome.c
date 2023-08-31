@@ -22,9 +22,7 @@ int is_pal(char *s, int start, int end)
   */
 int is_palindrome(char *s)
 {
-	int i = 0;
+	int i = strlen(s);
 
-	while (s[i] != '\0')
-		i++;
 	return (is_pal(s, 0, i - 1));
 }
