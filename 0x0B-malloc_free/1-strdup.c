@@ -10,7 +10,7 @@
 char *_strdup(char *str)
 {
 	char *p = malloc(strlen(str) + 1);
-	
+
 	if (str == NULL)
 	{
 		return (NULL);
@@ -21,7 +21,7 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		p = strcpy(p, str);
+		strcpy(p, str);
 		return (p);
 	}
 
