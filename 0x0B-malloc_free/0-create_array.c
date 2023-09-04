@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-*creat_array - fum
+*create_array - fum
 *@size: size
 *@c: char
 *Return: depends
@@ -16,7 +16,6 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	
 	if (p == NULL)
 	{
 		return (0);
