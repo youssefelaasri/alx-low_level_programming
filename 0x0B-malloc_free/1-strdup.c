@@ -2,13 +2,16 @@
 #include <string.h>
 #include <stdlib.h>
 
-
+/**
+*_strdup - func
+*@str: string
+*Return: depends
+*/
 char *_strdup(char *str)
 {
-	int i = strlen(str);
-	char *p = malloc(i);
+	char *p = malloc(strlen(str));
 
-	if (str == NULL)
+		if (str == NULL)
 	{
 		return (NULL);
 	}
@@ -18,7 +21,7 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		p = str;
+		p = strcpy(p, str);
 		return (p);
 	}
 
