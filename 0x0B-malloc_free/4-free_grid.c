@@ -1,6 +1,10 @@
 #include "main.h"
 #include <stdlib.h>
-
+/**
+*free_grid - fun
+*@grid: greid
+*@height: height of the grid
+*/
 void free_grid(int **grid, int height)
 {
 	int i;
