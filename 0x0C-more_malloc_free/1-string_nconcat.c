@@ -1,7 +1,13 @@
 #include "main.h"
 #include <string.h>
 #include <stdlib.h>
-
+/**
+*string_nconcat - our fn
+*@s1: string 1
+*@s2: string 2
+*@n: number
+*Return: depends
+*/
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	int l = 0;
@@ -11,7 +17,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s1 = "";
 	}
-	if (s2)
+	if (s2 == NULL)
 	{
 		s2 = "";
 	}
