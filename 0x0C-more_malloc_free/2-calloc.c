@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stddef.h>
 #include <stdlib.h>
+#include <string.h>
 /**
 *_calloc - fun
 *@nmemb: num
@@ -10,25 +11,19 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	int *p;
-	int *pp;
-	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
 	p = malloc(nmemb * size);
-	pp = p;
 	if (p == NULL)
 	{
 		return (NULL);
 	}
 	else
 	{
-		for (i = 0; i < nmemb * size; i = i + size)
-		{
-			pp[i] = 0;
-		}
+		memset(p, 0, nmemb * size);
 		return (p);
 	}
 }
