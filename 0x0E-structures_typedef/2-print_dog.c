@@ -24,7 +24,7 @@ void print_dog(struct dog *d)
 		}
 		else
 		{
-			printf("name: %s\n", d->owner);
+			printf("owner: %s\n", d->owner);
 		}
 	}
 }
