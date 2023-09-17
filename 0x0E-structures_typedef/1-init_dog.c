@@ -1,4 +1,5 @@
 #include <string.h>
+#include "dog.h"
 /**
   *init_dog - our fun
   *@d: strc
@@ -8,7 +9,7 @@
   */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	strcpy(d->name, name);
+	d->name = name;
 	d->age = age;
-	strcpy(d->owner, owner);
+	d->owner = owner;
 }
