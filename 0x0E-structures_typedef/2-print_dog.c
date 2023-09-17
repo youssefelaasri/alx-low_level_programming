@@ -4,6 +4,7 @@
   *print_dog - fun
   *@d: our str
   */
+
 void print_dog(struct dog *d)
 {
 	if (d != NULL)
@@ -25,5 +26,9 @@ void print_dog(struct dog *d)
 		{
 			printf("owner: %s\n", d->owner);
 		}
+	}
+	else
+	{
+		return;
 	}
 }
