@@ -1,5 +1,10 @@
 #include <stdio.h>
 #include "dog.h"
+/**
+*print_dog - fun
+*@d: struc
+*Return: nothing
+*/
 
 void print_dog(struct dog *d)
 {
