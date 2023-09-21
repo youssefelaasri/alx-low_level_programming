@@ -1,33 +1,31 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "dog.h"
+#include <stdlib.h>
 #include <string.h>
-/**
-  *new_dog - fun
-  *@name: names
-  *@age: ages
-  *@owner: owners
-  *Return: ret
-  */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *new_Dog = malloc(sizeof(dog_t));
-
-	if (new_Dog == NULL)
-	{
-		free(new_Dog->name);
-		free(new_Dog->owner);
-		free(new_Dog);
-		return (NULL);
-	}
-	new_Dog->name = strdup(name);
-	new_Dog->age = age;
-	new_Dog->owner = strdup(owner);
+	dog_t *nd;
+	
 	if (name == NULL || owner == NULL)
 	{
-		free(new_Dog->name);
-		free(new_Dog->owner);
-		free(new_Dog);
+		return (NULL);
 	}
-	return (new_Dog);
+	nd = malloc(sizeof(dog_t));
+	if (nd == NULL)
+	{
+		return (NULL);
+	}
+	nd->name = malloc((strlen(name) + 1));
+	nd->owner = malloc((strlen(owner) + 1));
+	if (nd->name == NULL || nd->owner == NULL)
+	{
+		free(nd->name);
+		free(nd->owner);
+		free(nd);
+		return (NULL);
+	}
+	strcpy(nd->name, name);
+	nd->age = age;
+	strcpy(nd->owner, owner);
+	return (nd);
 }
