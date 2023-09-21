@@ -10,7 +10,7 @@
 */
 size_t print_list(const list_t *h)
 {
-	int c = 0;
+	size_t c = 0;
 	const list_t *ptr = NULL;
 
 	ptr = h;
@@ -24,9 +24,8 @@ size_t print_list(const list_t *h)
 		{
 			printf("[%d] %s\n", h->len, ptr->str);
 		}
-		ptr = ptr->next;
 		c++;
-
+		ptr = ptr->next;
 	}
 	return (c);
 }
