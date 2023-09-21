@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include "lists.h"
+#include <string.h>
+
 /**
 *print_list - fun
 *@h: struct
@@ -8,6 +10,7 @@
 size_t print_list(const list_t *h)
 {
 	int c = 0;
+	int j = 0;
 	const list_t *ptr = NULL;
 
 	if (h == NULL)
@@ -26,7 +29,8 @@ size_t print_list(const list_t *h)
 		}
 		else
 		{
-			printf("%s\n", ptr->str);
+			j = strlen(ptr->str);
+			printf("[%d] %s\n", j, ptr->str);
 		}
 		ptr = ptr->next;
 	}
