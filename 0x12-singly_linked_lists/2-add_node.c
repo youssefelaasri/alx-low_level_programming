@@ -2,12 +2,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 /**
 *add_node - fun
 *@head: header
 *@str: strin
 *Return: dep
 */
+
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *pr = malloc(sizeof(list_t));
@@ -30,3 +32,4 @@ list_t *add_node(list_t **head, const char *str)
 	*head = pr;
 	return (pr);
 }
+
