@@ -10,8 +10,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		return (NULL);
 	}
-	strcpy(new_Dog->name, name);
+	new_Dog->name = strdup(name);
 	new_Dog->age = age;
-	strcpy(new_Dog->owner, owner);
+	new_Dog->owner = strdup(owner);;
 	return(new_Dog);
 }
