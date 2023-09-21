@@ -5,8 +5,9 @@
 /**
 *print_list - fun
 *@h: head
-*Return: dep
+*Return: return c
 */
+
 size_t print_list(const list_t *h)
 {
 	size_t c = 0;
