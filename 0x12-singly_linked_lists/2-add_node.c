@@ -3,9 +3,9 @@
 #include <stdlib.h>
 #include <string.h>
 /**
-  *_strlen - fun
-  *@s: dtri
-  *Return: ret
+  *_strlen - our fun
+  *@s: our to dtri
+  *Return: return count
   */
 int _strlen(const char *s)
 {
@@ -20,11 +20,11 @@ int _strlen(const char *s)
 	return (c);
 }
 /**
-*add_node - fun
-*@head: header
-*@str: strin
-*Return: dep
-*/
+ *add_node - our fun
+ *@head: our header
+ *@str: string
+ *Return: returns depends
+ */
 
 list_t *add_node(list_t **head, const char *str)
 {
