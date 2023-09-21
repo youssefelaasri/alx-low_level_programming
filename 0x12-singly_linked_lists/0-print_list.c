@@ -1,6 +1,23 @@
 #include <stdio.h>
 #include "lists.h"
-#include <string.h>
+
+/**
+*_strlen - fun
+*@str: string
+*Return: ret
+*/
+size_t _strlen(const char *str)
+{
+	size_t length = 0;
+
+	while (*str != '\0')
+	{
+		length++;
+		str++;
+	}
+
+	return (length);
+}
 
 /**
 *print_list - fun
@@ -29,7 +46,7 @@ size_t print_list(const list_t *h)
 		}
 		else
 		{
-			j = strlen(ptr->str);
+			j = _strlen(ptr->str);
 			printf("[%d] %s\n", j, ptr->str);
 		}
 		ptr = ptr->next;
