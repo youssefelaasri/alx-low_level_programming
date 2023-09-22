@@ -1,9 +1,11 @@
 #include "lists.h"
 #include <stdio.h>
 /**
-*my_constructor - our  func
+*fun - our  func
 */
-void my_constructor(void)
+void fun(void)__attribute__ ((constructor));
+
+void fun(void)
 {
 	printf("This text is printed before main()\n");
 }
