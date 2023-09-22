@@ -3,7 +3,7 @@
 
 void print_opcodes(int num_bytes) {
     unsigned char *ptr = (unsigned char *)print_opcodes;
-    int i;
+    intt i;
 	
     for (i = 0; i < num_bytes; i++) {
         printf("%02x", *(ptr + i));
@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
 
     int num_bytes = atoi(argv[1]);
 
-    if (num_bytes < 0) {
+    if (num_bytes <= 0) {
         printf("Error\n");
         return 2;
     }
