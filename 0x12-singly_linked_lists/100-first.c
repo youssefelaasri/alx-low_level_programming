@@ -3,7 +3,7 @@
 /**
 *my_constructor - our  func
 */
-void my_constructor()
+void my_constructor(void)
 {
-    printf("This text is printed before main()\n");
+	printf("This text is printed before main()\n");
 }
