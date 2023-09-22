@@ -1,3 +1,4 @@
+#include <stddef.h>
 /**
 *int_index - fun
 *@array: ourb array
