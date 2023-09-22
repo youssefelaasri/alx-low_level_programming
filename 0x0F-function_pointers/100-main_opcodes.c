@@ -1,29 +1,44 @@
 #include <stdio.h>
 #include <stdlib.h>
+/**
+*main - func
+*@argc: argc coun
+*@argv: arg v
+*Return: depens
+*/
+int main(int argc, char *argv[])
+{
+	int i, j;
+	int (*ptrf)(int, char **) = main;
+	unsigned char k;
 
-void print_opcodes(int num_bytes) {
-    unsigned char *ptr = (unsigned char *)print_opcodes;
-    int i;
-    for (i = 0; i < num_bytes; i++) {
-        printf("%02x ", *(ptr + i));
-    }
-    printf("\n");
-}
+	if (argc != 2)
+	{
+		printf("Error\n");
+		exit(1);
+	}
 
-int main(int argc, char *argv[]) {
-    if (argc != 2) {
-        printf("Error\n");
-        return 1;
-    }
+	i = atoi(argv[1]);
 
-    int num_bytes = atoi(argv[1]);
+	if (i < 0)
+	{
+		printf("Error\n");
+		exit(2);
+	}
 
-    if (num_bytes <= 0) {
-        printf("Error\n");
-        return 2;
-    }
+	for (j = 0; j < i; j++)
+	{
+		k = *(unsigned char *)ptrf;
+		printf("%.2x", k);
 
-    print_opcodes(num_bytes);
+		if (j == i - 1)
+			continue;
+		printf(" ");
 
-    return 0;
+		ptrf++;
+	}
+
+	printf("\n");
+
+	return (0);
 }
