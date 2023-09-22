@@ -1,8 +1,21 @@
-org  0x100
+section .data
+    hello db "Hello, Holberton,", 0
+    format db "%s", 0
+    newline db 10, 0
 
-mov  dx, msg
-mov  ah, 9
-int  0x21
-mov  ah, 0x4c
-int  0x21
-msg  db 'Hello, Holberton', 0x0d, 0x0a, '$'
+section .text
+    global main
+    extern printf
+	
+main:
+    push rbp
+    mov rdi, format
+    mov rsi, hello
+    call printf
+
+    mov rdi, format
+    mov rsi, newline
+    call printf
+
+    pop rbp
+    ret
