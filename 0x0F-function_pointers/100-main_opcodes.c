@@ -4,9 +4,8 @@
 void print_opcodes(int num_bytes) {
     unsigned char *ptr = (unsigned char *)print_opcodes;
     int i;
-
     for (i = 0; i < num_bytes; i++) {
-        printf("%02x", *(ptr + i));
+        printf("%02x ", *(ptr + i));
     }
     printf("\n");
 }
