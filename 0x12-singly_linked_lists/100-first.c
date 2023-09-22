@@ -7,5 +7,5 @@ void fun(void)__attribute__ ((constructor));
 
 void fun(void)
 {
-	printf("This text is printed before main()\n");
+	printf("You're beat! and yet, you must allow,\nI bore my house upon my back!\n");
 }
