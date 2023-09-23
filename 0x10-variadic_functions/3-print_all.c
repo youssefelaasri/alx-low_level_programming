@@ -16,35 +16,31 @@ void print_all(const char * const format, ...)
 	va_start(args, format);
 	while (*fmt)
 	{
-		if (*fmt == 'c')
+		switch (*fmt)
 		{
+			case 'c':
 			c = (char)va_arg(args, int);
 			printf("%c", c);
-		}
-		else if (*fmt == 'i')
-		{
+			break;
+			case 'i':
 			i = va_arg(args, int);
 			printf("%d", i);
-		}
-		else if (*fmt == 'f')
-		{
+			break;
+			case 'f':
 			f = (float)va_arg(args, double);
 			printf("%f", f);
-		}
-		else if (*fmt == 's')
-		{
+			break;
+			case 's':
 			s = va_arg(args, char *);
 			if (s == NULL)
 			{
 				printf("(nil)");
+				continue;
 			}
-			else
-			{
-				printf("%s", s);
-			}
+			printf("%s", s);
 		}
 		fmt++;
-		if (*fmt)
+		if (*fmt && (*fmt == 'c' || *fmt == 's' || *fmt == 'i' || *fmt == 'f'))
 		{
 			printf(", ");
 		}
