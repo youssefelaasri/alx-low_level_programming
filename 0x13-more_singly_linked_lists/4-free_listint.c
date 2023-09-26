@@ -3,13 +3,13 @@
 #include <stdio.h>
 #include "lists.h"
 /**
-*free_lisint - fun
+*free_listint - fun
 *@head: hed
 */
 void free_listint(listint_t *head)
 {
 	listint_t *ptr;
-	
+
 	ptr = head;
 
 	while (ptr != NULL)
