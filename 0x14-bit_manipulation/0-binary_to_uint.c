@@ -1,6 +1,6 @@
 #include "main.h"
 #include <string.h>
-#include <math.h>
+
 /**
 *binary_to_uint - fun
 *@b: string
@@ -19,7 +19,7 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (b[i] == '1' || b[i] == '0')
 		{
-			result = result + (b[i] - 48) * pow(2, (strlen(b) - 1) - i);
+			result = result + (b[i] - 48) * (1 <<((strlen(b) - 1) - i));
 		}
 		else
 		{
