@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stddef.h>
+
 
 /**
  * append_text_to_file - fun
